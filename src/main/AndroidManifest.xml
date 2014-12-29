@@ -35,7 +35,7 @@
         <!-- Other activities -->
         <activity
             android:name="com.samuellaska.beacon.sng.ListBeaconsActivity"
-            android:label="  Beacons List"
+            android:label="  Beacon List"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.samuellaska.beacon.sng.BeaconDebugActivity"
