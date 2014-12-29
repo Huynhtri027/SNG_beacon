@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 21
+    }
+}
+
+dependencies {
+    compile files('src/main/java/libs/estimote-sdk-preview.jar')
+    compile 'se.emilsjolander:StickyScrollViewItems:1.0.0'
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile 'com.melnykov:floatingactionbutton:1.0.7'
+    compile 'com.mcxiaoke.volley:library:1.0.6'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.10'
+}

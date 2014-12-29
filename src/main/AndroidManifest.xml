@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samuellaska.beacon.sng"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Bluetooth Low Energy -->
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
+
+    <!-- Activities -->
+    <application
+        android:label="Nestex"
+        android:theme="@style/SNGTheme"
+        android:icon="@drawable/ic_launcher" >
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.samuellaska.beacon.sng.HomeActivity"
+            android:label="  Nestex"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other activities -->
+        <activity
+            android:name="com.samuellaska.beacon.sng.ListBeaconsActivity"
+            android:label="  Beacon List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samuellaska.beacon.sng.BeaconDebugActivity"
+            android:label="  Beacon Detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samuellaska.beacon.sng.DisplayArtworkActivity"
+            android:label="  Artwork"
+            android:screenOrientation="portrait" />
+
+        <!-- Estimote service responsible for scanning beacons. -->
+        <service
+            android:name="com.estimote.sdk.service.BeaconService"
+            android:exported="false" />r
+    </application>
+
+</manifest>

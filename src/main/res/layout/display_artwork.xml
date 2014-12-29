@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.emilsjolander.components.StickyScrollViewItems.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/ScrollView" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.samuellaska.beacon.sng.DynamicImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_wait"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="sticky-nonconstant-hastransparancy">
+
+                <Button
+                    android:padding="10dp"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/homeButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:onClick="returnHome"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/ic_close_white"
+                    />
+                <Button
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/favoriteButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:onClick="returnHome"
+                    android:textSize="20dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_favorite_white"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(1970 - 2010)"
+                    android:layout_toRightOf="@id/homeButton"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="32dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:visibility="invisible"
+                    android:layout_alignParentTop="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/theader"
+            android:tag="sticky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#35454d"
+            android:layout_below="@id/header">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="24dp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="18dp"/>
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_below="@id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="18dp"
+                android:paddingTop="4dp"/>
+
+        </RelativeLayout>
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/share"
+            android:layout_below="@id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_arrow_white"
+            fab:fab_colorNormal="#ff4081"
+            fab:fab_colorPressed="#ff4081"
+            fab:fab_colorRipple="#ff4081"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-38dp"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_below="@id/theader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:text="Okázalé nástropné maľby popierajúce existenciu steny a sugerujúce jej dynamické otvorenie do hĺbky nadpozemského sveta sú typicky barokovými dielami. Ukážkou takéhoto priehľadu do nebeskej sféry s presvedčivou ilúziou tretej dimenzie je skica, ktorá bola ešte v 50. rokoch minulého storočia uložená v premonštrátskom kláštore v Jasove. Dlho sa mylne spájala s návrhmi pre uvedený objekt a s maliarom J. L. Krackerom.
+\nRozne interpretovaný námet (Alegória cnosti – Víťazstvo dňa nad nocou, Triumf umenia s Apolónom, Triumf Auróry, Alegória života a smrti) predstavuje alegóriu lásky panovníckeho manželského páru a kráľovnú Alžbetu Kristínu ako Bellonu. Zdobil leopoldovský trakt Hofburgu po jej návrate zo španielska. „Cikcakovo“ komponovaný dramatický boj je zachytený v ostrom podhľade výlučne na pozadí neba definovaného oblakmi.\n\nOkázalé nástropné maľby popierajúce existenciu steny a sugerujúce jej dynamické otvorenie do hĺbky nadpozemského sveta sú typicky barokovými dielami. Ukážkou takéhoto priehľadu do nebeskej sféry s presvedčivou ilúziou tretej dimenzie je skica, ktorá bola ešte v 50. rokoch minulého storočia uložená v premonštrátskom kláštore v Jasove. Dlho sa mylne spájala s návrhmi pre uvedený objekt a s maliarom J. L. Krackerom.
+\nRozne interpretovaný námet (Alegória cnosti – Víťazstvo dňa nad nocou, Triumf umenia s Apolónom, Triumf Auróry, Alegória života a smrti) predstavuje alegóriu lásky panovníckeho manželského páru a kráľovnú Alžbetu Kristínu ako Bellonu. Zdobil leopoldovský trakt Hofburgu po jej návrate zo španielska. „Cikcakovo“ komponovaný dramatický boj je zachytený v ostrom podhľade výlučne na pozadí neba definovaného oblakmi."/>
+    </RelativeLayout>
+
+</com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
