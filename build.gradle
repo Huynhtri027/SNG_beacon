@@ -23,7 +23,7 @@ android {
 }
 
 dependencies {
-    compile files('src/main/java/libs/estimote-sdk-preview.jar')
+    compile files('src/main/javlibs/estimote-sdk-preview.jar')
     compile 'se.emilsjolander:StickyScrollViewItems:1.0.0'
     compile 'com.android.support:appcompat-v7:21.0.0'
     compile 'com.melnykov:floatingactionbutton:1.0.7'
