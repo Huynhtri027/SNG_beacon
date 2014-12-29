@@ -15,6 +15,8 @@ found inside HomeActivity.java, SNG API is not yet providing thumbnails for artw
 that's why they are for now statically stored inside resources folder and hardcode linked in
 home grid MyAdapter.  
 
-App has built in beacon debug UI, to access it press top right overflow button in menu and 
-select debug option. After selecting beacon you can change its MINOR (usefull when having 
+App has built in beacon debug interface, to access it press top right overflow button in menu 
+and select debug option. After selecting beacon you can change its MINOR (usefull when having 
 limited number of beacons).
+
+![artwork screenshot](screenshot.png)

@@ -103,7 +103,7 @@
             android:layout_below="@id/header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_play_arrow_white"
+            android:src="@drawable/ic_queue_music_white"
             fab:fab_colorNormal="#ff4081"
             fab:fab_colorPressed="#ff4081"
             fab:fab_colorRipple="#ff4081"
