@@ -5,7 +5,8 @@ Android application allowing visitors of museum to receive information about art
 by coming near to exhibit with their phone (~2m). Solution is build with Estimote beacons 
 and requires phone to have Bluetooth Low Energy (version 4.0) to function.
 
-SNG Beacon is winning project created during two days on SNG hackathon hackathon.sng.sk
+SNG Beacon is one of winning projects created during two days with help of Matej Hlavačka 
+for SNG hackathon http://hackathon.sng.sk/
 
 Additional Info
 ---------------
